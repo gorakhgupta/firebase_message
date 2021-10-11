@@ -11,6 +11,13 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   // your config
+  apiKey: "AIzaSyAGLxl9rTiPKaVQpwpAk3bWG2L_xmturNg",
+  authDomain: "superchat-ats.firebaseapp.com",
+  projectId: "superchat-ats",
+  storageBucket: "superchat-ats.appspot.com",
+  messagingSenderId: "889398304931",
+  appId: "1:889398304931:web:e2ccedf048fa1fddcc1f16",
+  measurementId: "G-EZZCCGY07Z"
 })
 
 const auth = firebase.auth();
@@ -25,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+      
         <SignOut />
       </header>
 
@@ -97,9 +104,9 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type here to send" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>Send</button>
 
     </form>
   </>)
