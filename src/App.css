@@ -9,7 +9,7 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background-color: #c26161;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-color: rgb(170, 158, 223);
 }
 
 main {
@@ -83,7 +83,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #db2e10; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -101,7 +101,7 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
+  color: #7aeb1e;
   background: white;
   max-width: 400px;
   margin: 0 auto;
@@ -129,6 +129,7 @@ p {
 .message {
   display: flex;
   align-items: center;
+  scroll-behavior:auto;
 }
 
 

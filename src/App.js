@@ -4,6 +4,7 @@ import './App.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import Test from './Test'
 import 'firebase/analytics';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+    <Test/>
       <header>
       
         <SignOut />
@@ -62,7 +64,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="sign-out" onClick={() => auth.signOut()}>LogOut</button>
   )
 }
 
@@ -106,7 +108,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type here to send" />
 
-      <button type="submit" disabled={!formValue}>Send</button>
+      <button style={{backgroundColor:'dodgerblue'}} type="submit" disabled={!formValue}>Send</button>
 
     </form>
   </>)
@@ -125,6 +127,7 @@ function ChatMessage(props) {
     </div>
   </>)
 }
+
 
 
 export default App;
